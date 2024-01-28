@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Shrikhand&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Righteous';
+
+}
+
+body{
+    background-color: #ee9646;
+    
+}
+
+.container{
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    top: 1rem;
+    left: 50%;
+    width: 80vw;
+    max-width: 30rem;
+    padding: 3rem 2.8rem;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://media.istockphoto.com/id/1081422898/photo/pan-fried-duck.jpg?b=1&s=612x612&w=0&k=20&c=E5YZ31t5xyOIaZ48S4U1sTnbVChrPo6YdRH1oJtRk8g=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+ .imga {
+    height:auto ;
+    width: 20%;
+    animation: mato;
+    animation-duration: 10s;
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    *//*opacity: 0.7;
+    */
+
+}
+
+
+
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    gap: 2rem;
+}
+
+
+.search-container input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+.search-container > button {
+    border-radius: 10px;
+   border-top-right-radius: 20px ;
+   border-bottom-left-radius: 20px;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 40%;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #ee9646 ;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    width: 30%;
+    color: gray;
+}
+
+img {
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    margin: 1.8rem auto 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
+
+h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+h4 {
+    color:#ee9646 ;
+}
+
+.details{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ee9646 ;
+    background-color: transparent;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    text-align: center;
+    padding: 0.6rem 0;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+#recipe{
+    position: absolute;
+    background: black;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    z-index: 2;
+  
+
+   display: none;
+    
+    
+}
+
+#hide-recipe{
+    font-size: 1.2rem;
+    position: relative;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: none;
+    background-color:#ee9646  ;
+    top: 1.2rem;
+    left: 90%;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+
+     
+}
+
+#recipe pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: white;
+    padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+}
+
+#show-recipe {
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    color: white;
+    left: 75%;
+    padding: 0.9rem 0.6rem;
+    background-color: #ee9646;
+    border: none;
+    border-radius: 0.3rem;
+    border-bottom-left-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+
+#show-recipe:hover{
+    color: gray;
+}
+
+ul {
+    color:#ffff ;
+    font-size: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8rem 1.1rem;
+    padding: 1.2rem 0 0 1.2rem;
+}
+
+p{
+    text-align: center;
+    margin-top: 1.8rem;
+    color: #ee9646;
+    font-weight: 200;
+}
+
+h3{
+    color: red;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 1.8rem;
+}
